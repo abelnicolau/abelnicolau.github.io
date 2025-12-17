@@ -1,0 +1,4 @@
+@media print {
+  .print-btn { display: none; }
+  body { font-size: 11pt; padding: 0; }
+}
