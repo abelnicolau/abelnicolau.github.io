@@ -1,18 +1,32 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>WebsiteTest</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name – Academic CV</title>
+  <meta name="description" content="Academic CV of Your Name">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/print.css">
 </head>
 <body>
-  
-  <header>
-  <h1>Website</h1>  
-  </header>
-  
-  <h2>Header</h2>
-  <p>Text</p>
-  
-  <footer>
-  </footer>
+<header class="profile">
+  <img src="assets/photo.jpg" alt="Your Name">
+  <h1>Your Name</h1>
+  <p>Academic Title / Position</p>
+  <p>
+    <a id="orcid" target="_blank">ORCID</a> |
+    <a id="scholar" target="_blank">Google Scholar</a>
+  </p>
+</header>
+
+<button class="print-btn" onclick="window.print()">Print CV</button>
+
+<section id="summary"><h2>1. Summary</h2></section>
+<section id="publications"><h2>2. Publications</h2></section>
+
+<script src="js/data/personal.js"></script>
+<script src="js/data/publications.js"></script>
+<script src="js/orcid.json" type="application/json" id="orcid-data"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
